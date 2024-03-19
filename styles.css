@@ -1,1 +1,23 @@
 /* comment */
+/* setting the values */
+:root {
+    --main-font: arial, helvetica, sans-serif;
+    --french-rose: #f75590ff;
+    --champagne-pink: #f8d8c8;
+    --jasmine: #fbd87fff;
+    --celeste: #b5f8feff;
+    --aquamarine: hsl(167, 100%, 65%);
+}
+
+body {
+    /* here we use main-font */
+    font-family: var(--main-font);
+    background-color: var(--champagne-pink);
+}
+.main-header {
+    background-color: var(--jasmine);
+}
+.logo {
+    max-width: 80px;
+    padding: 10px;
+}
