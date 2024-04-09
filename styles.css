@@ -16,6 +16,9 @@ body {
 }
 .main-header {
     background-color: var(--jasmine);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .logo {
     max-width: 80px;
