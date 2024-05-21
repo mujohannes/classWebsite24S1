@@ -2,27 +2,97 @@
 /* setting the values */
 :root {
     --main-font: arial, helvetica, sans-serif;
-    --french-rose: #f75590ff;
-    --champagne-pink: #f8d8c8;
-    --jasmine: #fbd87fff;
-    --celeste: #b5f8feff;
-    --aquamarine: hsl(167, 100%, 65%);
+    --van-dyke: hsla(341, 12%, 26%, 1);
+    --jonquil: hsla(49, 98%, 49%, 1);
+    --coyote: hsla(36, 17%, 44%, 1);
+    --fairy-tale: hsla(338, 30%, 79%, 1);
+    --ghost-white: hsla(240, 100%, 98%, 1);
 }
 
 body {
     /* here we use main-font */
     font-family: var(--main-font);
-    background-color: var(--champagne-pink);
+    background-color: var(--fairy-tale);
+    margin: 0px;
 }
+
 .main-header {
-    background-color: var(--jasmine);
+    background-color: var(--van-dyke);
     /* display: flex;
     flex-direction: row;
     justify-content: space-between; */
     display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
 }
+
+.main-navigation a {
+    color: var(--ghost-white);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.main-navigation a:hover {
+    text-decoration: underline;
+}
+
+.main-navigation {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-navigation a {
+    color: var(--ghost-white);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.user-navigation {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+}
+
 .logo {
     max-width: 80px;
     padding: 10px;
+}
+
+.logo-link {
+    grid-row: span 2;
+}
+
+.search-form {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    min-width: 50vw;
+    margin-top: 1em;
+}
+.search-input {
+    flex: 1;
+    padding: 0.8em;
+    border-radius: 5px 0px 0px 5px;
+    border-width: 0px;
+}
+.search-button {
+   padding: 0.8em; 
+   border-radius: 0px 5px 5px 0px;
+   border-width: 0px;
+   background-color: var(--coyote);
+   color: var(--ghost-white);
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
