@@ -16,9 +16,11 @@ body {
 }
 .main-header {
     background-color: var(--jasmine);
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
 }
 .logo {
     max-width: 80px;
