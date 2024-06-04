@@ -14,6 +14,10 @@ body {
     font-family: var(--main-font);
     background-color: var(--fairy-tale);
     margin: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow-y: scroll;
 }
 
 .main-header {
@@ -95,4 +99,72 @@ body {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-footer {
+    padding: 1em;
+    background-color: var(--van-dyke);
+}
+
+.policies {
+    display: flex;
+    flex-direction: row;
+}
+.policies a {
+    color: var(--ghost-white);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+.social a {
+    color: var(--fairy-tale);
+    text-decoration: none;
+    padding: 1em;
+}
+.social a:hover {
+    color: yellow;
+}
+
+/* carousel */
+.slide {
+    min-height: 50vh;
+    min-width: 100%;
+    background-color: var(--jonquil);
+    background-size: cover;
+    aspect-ratio: 16/6;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.slide h1 {
+    background-color: hsla(240, 100%, 98%, 0.4);
+    padding: 1em;
+    border-radius: 1em;
+    min-width: 6em;
+    text-align: center;
+}
+.one {
+    background-image: url("assets/pexels-goumbik-292999.jpg");
+}
+.two {
+    background-image: url("assets/pexels-mnzoutfits-1598505.jpg");
+}
+.three {
+    background-image: url("assets/pexels-mstudio-360817-1240892.jpg");
+}
+.four {
+    background-image: url("assets/pexels-oandremoura-2562992.jpg");
+}
+.five {
+    background-image: url("assets/pexels-pixabay-267320.jpg");
 }

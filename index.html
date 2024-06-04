@@ -9,6 +9,9 @@
         <meta name="description" content="web page for learning html">
         <meta name="keywords" content="html,web,css">
         <meta name="viewport" content="width=device-width,intiial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
        <!-- comment -->
     </head>
     <body>
@@ -20,7 +23,10 @@
             <form class="search-form" id="search" action="/search" method="get">
                 <label for="search-input" class="sr-only">Search Query</label>
                 <input id="search-input" type="search" placeholder="search for a product" name="query" class="search-input">
-                <button type="submit" class="search-button">Search</button>
+                <button type="submit" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="sr-only">Search</span>
+                </button>
             </form>
             <nav class="main-navigation">
                 <a href="index.html">Home</a>
@@ -30,10 +36,54 @@
             <nav class="user-navigation">
                 <a href="login.html">Login</a>
                 <a href="wishlist.html">Wishlist</a>
-                <a href="cart.html">Cart</a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="sr-only">Cart</span>
+                </a>
             </nav>
         </header>
-       <div class="main-content"></div>
-       <footer class="main-footer"></footer>
+       <div class="main-content">
+            <!-- carousel -->
+            <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround" : true, "autoPlay" : 4000 }'>
+                <div class="slide one">
+                    <h1>One</h1>
+                </div>
+                <div class="slide two">
+                    <h1>Two</h1>
+                </div>
+                <div class="slide three">
+                    <h1>Three</h1>
+                </div>
+                <div class="slide four">
+                    <h1>Four</h1>
+                </div>
+                <div class="slide five">
+                    <h1>Five</h1>
+                </div>
+            </div>
+       </div>
+       <footer class="main-footer">
+           <div class="row">
+                <nav class="policies">
+                    <a href="deliveries.html">Delivery</a>
+                    <a href="returns.html">Returns</a>
+                    <a href="exchanges.html">Exchange</a>
+                </nav>
+                <nav class="social">
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="https://tiktok.com">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <span class="sr-only">TikTok</span>
+                    </a>
+                    <a href="https://facebook.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </nav>
+           </div>
+       </footer>
     </body>
 </html>
