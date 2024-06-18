@@ -210,3 +210,26 @@ body {
     column-gap: 1em;
     row-gap: 1.2em;
 }
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+#contact-form label {
+    margin-top: 1em;
+}
+#contact-form input, #contact-form textarea {
+    display: block;
+    padding: 0.5em;
+    border-color: var(--van-dyke);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.4em;
+}
+#contact-form button {
+    background-color: var(--van-dyke);
+    color: var(--ghost-white);
+    padding: 0.5em;
+    min-width: 6em;
+    margin-top: 1em;
+}
+

@@ -58,6 +58,20 @@
                 </div>
                 <div class="card">
                     <!-- contact form -->
+                    <div class="card-content">
+                        <form id="contact-form" action="https://example.com/form" method="post">
+                            <label for="username">Name</label>
+                            <input id="username" type="text" name="username" placeholder="Jane Smith" max="128" min="2">
+                            <label for="useremail">Email</label>
+                            <input id="useremail" type="email" name="useremail" placeholder="janesmith@example.com">
+                            <label for="usermessage">Message</label>
+                            <textarea id="usermessage" placeholder="Hey how are you?" name="usermessage" rows="5" cols="50"></textarea>
+                            <div class="row">
+                                <button type="reset">Clear Form</button>
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="card">
                     <!-- contact details -->
