@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Tip Toe Soles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/plus-icon-13066.png">
+    <meta charset="UTF-8">
+    <meta name="author" content="johannes">
+    <meta name="description" content="web page for learning html">
+    <meta name="keywords" content="html,web,css">
+    <meta name="viewport" content="width=device-width,intiial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- comment -->
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo-link">
+            <img src="assets/TipToe_Soles_Logo_colour.png" alt="tip toe soles logo" class="logo">
+        </a>
+        <!-- search form -->
+        <form class="search-form" id="search" action="/search" method="get">
+            <label for="search-input" class="sr-only">Search Query</label>
+            <input id="search-input" type="search" placeholder="search for a product" name="query" class="search-input">
+            <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="sr-only">Search</span>
+            </button>
+        </form>
+        <nav class="main-navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="user-navigation">
+            <a href="login.html">Login</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">Cart</span>
+            </a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="content">
+            <div class="grid-2">
+                <div class="card">
+                    <!-- map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6623.970684765875!2d151.09088099344842!3d-33.89003133674086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bae2c4b04c55%3A0x5017d681632b660!2sEnfield%20NSW%202136!5e0!3m2!1sen!2sau!4v1718669427525!5m2!1sen!2sau"
+                        width="600" height="450" style="border:0;width:100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card">
+                    <!-- contact form -->
+                </div>
+                <div class="card">
+                    <!-- contact details -->
+                    <div class="card-content">
+                        <h4>Contact Us</h4>
+                        <p>We are located in Enfield NSW</p>
+                        <p>
+                            Our address is
+                        <address>
+                            322 Avondale Road
+                            Enfield NSW 2133
+                        </address>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- customer support -->
+                     <div class="card-content">
+                        <h4>Customer Service</h4>
+                        <p>Need help? Contact us here</p>
+                        <h5>Call us </h5>
+                        <p>
+                            <a href="tel:02 9210 5000">
+                                <i class="fa-solid fa-phone"></i>
+                                02 9210 5000
+                            </a>
+                        </p>
+                        <h5>Email us</h5>
+                        <p>
+                            <a href="mailto:tiptoeshoes@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                TipToeShoes@gmail.com
+                            </a>
+                        </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="row">
+            <nav class="policies">
+                <a href="deliveries.html">Delivery</a>
+                <a href="returns.html">Returns</a>
+                <a href="exchanges.html">Exchange</a>
+            </nav>
+            <nav class="social">
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://tiktok.com">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span class="sr-only">TikTok</span>
+                </a>
+                <a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
